@@ -1,0 +1,28 @@
+https://github.com/platzi/fundamentos-nestjs/tree/18-step
+
+Terminar todos los controladores, servicios y dtos
+
+Asi deberia terminar el App Module
+
+...
+
+@Module({
+  imports: [],
+  controllers: [
+    AppController,
+    ProductsController, // 👈
+    CategoriesController, // 👈
+    BrandsController,  // 👈
+    CustomerController,  // 👈
+    UsersController,  // 👈
+  ],
+  providers: [
+    AppService,
+    ProductsService,  // 👈
+    CategoriesService,  // 👈
+    BrandsService,  // 👈
+    CustomersService,  // 👈
+    UsersService,  // 👈
+  ],
+})
+export class AppModule {}
